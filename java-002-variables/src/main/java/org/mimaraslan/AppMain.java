@@ -19,7 +19,8 @@ public class AppMain {
         System.out.println("Bölme : " + (sayi1 / sayi2));
         System.out.println("Çarpma : " + (sayi1 * sayi2));
 
-
+        ChromeOptions options = new ChromeOptions();
+        options.AddArguments("--remote-allow-origins="*");
 
 
     }
