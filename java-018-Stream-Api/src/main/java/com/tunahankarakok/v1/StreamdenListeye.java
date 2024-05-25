@@ -1,4 +1,4 @@
-﻿package com.tunahankarakok.v1;
+package com.tunahankarakok.v1;
 
 import java.util.HashSet;
 import java.util.TreeSet;
@@ -9,13 +9,13 @@ public class StreamdenListeye {
     public static void main(String[] args) {
 
         Stream <String> nyStream1 = Stream.of("Bariş","Emre","İbrahim","Emre","Seren","Hasan","Dilşat",
-                "Çağdaş","Sener");
+                "Çağdaş","Şener");
         TreeSet <String> myTreeSet1 = nyStream1.collect(TreeSet::new,TreeSet::add,TreeSet::addAll);
         System.out.println(myTreeSet1);
         System.out.println("------------------------------");
 
         Stream <String> nyStream2 = Stream.of("Bariş","Emre","İbrahim","Emre","Seren","Hasan","Dilşat",
-                "Çağdaş","Sener");
+                "Çağdaş","Şener");
 
         TreeSet <String> myTreeSet2 = nyStream2.collect(Collectors.toCollection(TreeSet::new));
         System.out.println(myTreeSet2);
@@ -23,7 +23,7 @@ public class StreamdenListeye {
 
 
         Stream <String> nyStream3 = Stream.of("Bariş","Emre","İbrahim","Emre","Seren","Hasan","Dilşat",
-                "Çağdaş","Sener");
+                "Çağdaş","Şener");
 /*
         myStream3
                 .sorted()
@@ -42,7 +42,7 @@ public class StreamdenListeye {
         System.out.println("------------------------------");
 
         Stream <String> myStream4 = Stream.of("Bariş","Emre","İbrahim","Emre","Seren","Hasan","Dilşat",
-                "Çağdaş","Sener");
+                "Çağdaş","Şener");
 
         myStream4.sorted()
                 .distinct()
