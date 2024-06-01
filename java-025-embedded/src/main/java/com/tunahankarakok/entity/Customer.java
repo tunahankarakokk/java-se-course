@@ -1,9 +1,17 @@
 package com.tunahankarakok.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.Date;
+@Setter
+@Getter
 
 @Entity
-@Table(name = "CUSTOMERS2")
+@Table(name = "CUSTOMERS")
 public class Customer {
 
     @Id
@@ -17,6 +25,28 @@ public class Customer {
     @Column(name = "LAST_NAME", length = 55)
     private String lastName;
 
+    @Temporal(TemporalType.DATE)
+    @Column(name= "DATE_CREATE")
+    private Date createDate;
+
+    /* bu alan tabloya kolon olarak eşlenmez!
+    @Transient
+    private String info;
+*/
+    /*
+    @Lob
+    private String info;
+*/
+/*
+    private String address;
+
+    private String city;
+    private String state;
+    private String zip;
+*/
+   // private String phone;
+@Embedded
+    private Adress adress;
 
     public Customer() {
     }
