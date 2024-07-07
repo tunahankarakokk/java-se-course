@@ -3,18 +3,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
+
     <groupId>com.tunahankarakok</groupId>
     <artifactId>java-035-spring-boot-hello</artifactId>
     <version>1.0.0</version>
     <name>java-035-spring-boot-hello</name>
     <description>java-035-spring-boot-hello</description>
+
+
     <url/>
     <licenses>
         <license/>
@@ -36,8 +38,8 @@
 
 
     <dependencies>
-    <!-- dev  -->
 
+        <!-- Dev -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -53,8 +55,8 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
         <!-- DB -->
-        <!--
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -69,7 +71,9 @@
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
--->
+
+
+
         <!-- Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -82,6 +86,8 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+
         <!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -89,6 +95,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -105,4 +112,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
