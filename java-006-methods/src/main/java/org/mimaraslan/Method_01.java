@@ -1,6 +1,11 @@
 package org.mimaraslan;
 
 public class Method_01 {
+    /*
+    f(2x+3)=y
+    2*1 + 3 = 5;
+    */
+
     static int f(int x){
         return 2*x + 3;
     }

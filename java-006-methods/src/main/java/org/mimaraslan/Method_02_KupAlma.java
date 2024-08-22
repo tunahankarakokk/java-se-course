@@ -10,7 +10,7 @@ public class Method_02_KupAlma {
         double virgulluSayi2= 2.123456789;
 */
 
-    float sonuc = kupAl(2.0f);
+    float sonuc = kupAl(  2.0f);
         System.out.println(sonuc);
     
     

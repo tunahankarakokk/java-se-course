@@ -1,11 +1,12 @@
-package com.tunahankarakok;
+package com.tunahankarakok.departman;
 
+import com.tunahankarakok.base.Personel;
 import lombok.*;
 
 @Getter
 @Setter
-public class Mudur extends Personel{
-private  Boolean  makamAraci;
+public class Mudur extends Personel {
+    private Boolean makamAraci;
 
     public Mudur() {
 
@@ -18,7 +19,8 @@ private  Boolean  makamAraci;
         super(adi, soyadi, telefonno, departmani, sicilNo, tahsilDurumu, tecrubeYili);
         this.makamAraci = makamAraci;
     }
-    public void bilgisiniYaz(Mudur mudur){
+
+    public void bilgisiniYaz(Mudur mudur) {
         System.out.println("Adı : " + this.getAdi());
         System.out.println("Soyadı : " + this.getSoyadi());
         System.out.println("Sicil No :" + this.getSicilNo());
@@ -26,7 +28,7 @@ private  Boolean  makamAraci;
         System.out.println("Tecrube Yili :" + this.getTecrubeYili());
         //TODO bu kısma gelecek şeyler var --- HALLLEDİLDİ :);
 
-        System.out.println("Soyadı : " + this.getMakamAraci());
+        System.out.println("Makam Araç Durumu  " + mudur.getMakamAraci());
     }
 
 }

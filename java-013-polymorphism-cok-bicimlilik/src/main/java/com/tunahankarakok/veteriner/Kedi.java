@@ -1,19 +1,16 @@
-package com.mimaraslan.veteriner;
+package com.tunahankarakok.veteriner;
 
-import com.mimaraslan.base.Hayvan;
+import com.tunahankarakok.base.Hayvan;
 
 public class Kedi extends Hayvan {
-
     public Kedi() {
-        super();
         System.out.println("Kedi");
     }
 
-
     @Override
     public void sesVer(){
-        System.out.println("Kedi: Miyav miyav");
+        System.out.println("Kedi : Miyav miyav");
     }
 
-
 }
+
