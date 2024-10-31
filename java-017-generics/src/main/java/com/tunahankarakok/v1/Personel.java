@@ -1,9 +1,9 @@
 package com.tunahankarakok.v1;
 
 public class Personel {
-    int yasi;
-    String adi;
-    String soyadi;
+    private int yasi;
+    private String adi;
+    private String soyadi;
 
     public Personel(int yasi, String adi, String soyadi) {
         this.yasi = yasi;
@@ -38,7 +38,7 @@ public class Personel {
     public void setSoyadi(String soyadi) {
         this.soyadi = soyadi;
     }
-
+/*
     @Override
     public String toString() {
         return "Personel{" +
@@ -46,5 +46,5 @@ public class Personel {
                 ", adi='" + adi + '\'' +
                 ", soyadi='" + soyadi + '\'' +
                 '}';
-    }
+    }*/
 }

@@ -16,7 +16,7 @@ public class MySet {
         HashSet <String> studentList2 = new HashSet<>();
 
         Set<String> studentList3 = new TreeSet<>();
-        Set<String> studentList4 = new TreeSet<>();
+        TreeSet<String> studentList4 = new TreeSet<>();
 
         Set<String> studentList5 = new LinkedHashSet<>();
         LinkedHashSet <String> studentList6 = new LinkedHashSet<>();
@@ -72,7 +72,7 @@ public class MySet {
         studentList6.add(null);//olmaz
         studentList6.add("Barış");
         studentList6.add("Öykü");
-        studentList6.add(null);//olmaz
+        studentList6.add(null);//oLur
 
 
         System.out.println("LinkedHashSet : " + studentList6);

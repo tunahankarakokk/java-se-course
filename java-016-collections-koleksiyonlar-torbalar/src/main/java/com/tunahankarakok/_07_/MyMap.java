@@ -68,66 +68,62 @@ public class MyMap {
 
         System.out.println("TreeMap : " + mapList3);
         System.out.println("---------------------------------");
-        //FIXME plaka nolarının önündeki sıfır olacak
-        // şekilde sıralanacak
-        Map<Integer, String> mapList4 = new TreeMap<>();
+
+        //FIXME plaka nolarının önündeki sıfır olacak şekilde sıralanacak
+
+        Map<String, String> mapList4 = new TreeMap<>();
         // Map<String,Integer> mapList1 = new HashMap();
-
-//treeMap
+        //treeMap
         //KEYLER NULL OLAMAZ
+        //           KEY   VALUE
+        mapList4.put("06", "Ankara");
+        mapList4.put("42", "Konya");
+        mapList4.put("35", "İzmir");
+        mapList4.put("61", "Trabzon");
+        //mapList4.put(null,"Adana"); //Key null olamaz
+        mapList4.put("04","Ağrı");
+        mapList4.put("06", "Ankara");
+        // mapList4.put(null,null); //Key null olamaz
+        mapList4.put("06", "Ankara");
+        mapList4.remove("35");
 
-        // mapList3.put(null , "02");
-        mapList4.put(06, "Ankara");
-        mapList4.put(42, "Konya");
-        mapList4.put(35, "İzmir");
-        mapList4.put(61, "Trabzon");
-        //mapList3.put(null,"01");
-          mapList4.put(04,"Ağrı");
-        mapList4.put(1453, "Ankara");
-        // mapList4.put(null,null);
+        System.out.println("TreeMap 4: " + mapList4);
 
-
-        System.out.println("TreeMap : " + mapList4);
-        System.out.println("---------------------------------");
-
-        Map<String, String> mapList5 = new TreeMap<>();
-
-        mapList5.put("06", "Ankara");
-        mapList5.put("42", "Konya");
-        mapList5.put("35", "İzmir");
-        mapList5.put("61", "Trabzon");
-        //mapList3.put(null,"01");
-        mapList5.put("04","Ağrı");
-        mapList5.put("1453", "Ankara");
-        // mapList4.put(null,null);
-        mapList5.remove("35");
-
-
-        System.out.println("TreeMap : " + mapList5);
-        for(String anahtar : mapList5.keySet()){
-            System.out.println(anahtar+ " " + mapList5.get(anahtar));
+        System.out.println("--KEYS--");
+        for (String anahtar : mapList4.keySet()) {
+            System.out.println(anahtar);
+        }
+        System.out.println("--VALUES--");
+        for (String deger : mapList4.values()) {
+            System.out.println(deger);
+        }
+        System.out.println("--KEYS AND VALUES--");
+        for(String anahtar : mapList4.keySet()) {
+            System.out.println(anahtar + " " + mapList4.get(anahtar));
         }
 
-        System.out.println("-----------------------");
-        Map<String, String> mapList6 = new Hashtable<>();
-        //bunda keyde null olamaz value de nullolamaz
 
-    //    mapList1.put(null, "02");
-        mapList6.put("Ankara", "006");
-        mapList6.put("Konya", "42");
-        mapList6.put("İzmir", "35");
-        mapList6.put("Adana", "06");
-        mapList6.put("Çankırı", "18");
-        mapList6.put("Kastamonu", "37");
-        mapList6.put("Trabzon", "61");
-       // mapList6.put(null, "01");
-       // mapList6.put("Ağrı", null);
-        //mapList6.put("Ankara" , "1453");
-      //  mapList6.put(null, null);
 
-        System.out.println("Hashtable : " + mapList6);
+        System.out.println("---------------------------------");
+
+        Map<String, String> mapList5 = new Hashtable<>();
+
+
+        mapList5.put("Ankara", "06");
+        mapList5.put("Konya", "42");
+        mapList5.put("İzmir", "35");
+        mapList5.put("Adana", "01");
+        mapList5.put("Çankırı", "18");
+        mapList5.put("Kastamonu", "37");
+        mapList5.put("Trabzon", "61");
+        //mapList5.put(null, "01");//key null olamaz
+        //mapList5.put("Ağrı", null);//value null olamaz
+        //mapList5.put(null, null);//key null olamaz
+
         //TODO sort yapılacak
         //a'dan z'ye z'den A'ya sıralama yap
         //0'dan 9'a  9'dan A'ya
+        System.out.println("Hashtable : " + mapList5);
+
     }
 }

@@ -99,9 +99,9 @@ public class MyArrayList {
         System.out.println("Liste4  boyutu eleman sayısı: " + myList4.size());
 
         System.out.println("Liste 1 dolu mu ? :" + !myList1.isEmpty());
-        System.out.println("Liste 1 dolu mu ? :" + !myList2.isEmpty());
-        System.out.println("Liste 1 dolu mu ? :" + !myList3.isEmpty());
-        System.out.println("Liste 1 dolu mu ? :" + !myList4.isEmpty());
+        System.out.println("Liste 2 dolu mu ? :" + !myList2.isEmpty());
+        System.out.println("Liste 3 dolu mu ? :" + !myList3.isEmpty());
+        System.out.println("Liste 4 dolu mu ? :" + !myList4.isEmpty());
 
         System.out.println("------------------------------------------------");
         myList3.add("Abdullah");

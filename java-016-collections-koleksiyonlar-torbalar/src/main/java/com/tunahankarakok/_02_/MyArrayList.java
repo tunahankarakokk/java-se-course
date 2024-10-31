@@ -13,6 +13,7 @@ public class MyArrayList {
         listStudent.add("Mustafa");
         listStudent.add("Abdullah");
         listStudent.add("Burak");
+
         Collections.sort(listStudent); // a dan z ye sırala
         Collections.sort(listStudent, Collections.reverseOrder()); // z den a ya sıralama
 
@@ -29,11 +30,7 @@ public class MyArrayList {
         for(String student : listStudent){
             System.out.println(student);
         }
-
-
         System.out.println("----------------------------");
-
-
         //lambda ile yazdırmak
         listStudent.forEach(student -> System.out.println(student));
 

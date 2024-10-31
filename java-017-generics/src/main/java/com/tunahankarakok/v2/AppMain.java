@@ -42,5 +42,6 @@ public class AppMain {
 
         obj.ekranaYaz(ogrenciNoList,ogrenciAdList);
 
+
     }
 }

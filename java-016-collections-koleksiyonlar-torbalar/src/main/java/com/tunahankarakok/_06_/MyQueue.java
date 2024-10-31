@@ -1,10 +1,10 @@
-package com.tunahankarakok;
+package com.tunahankarakok._06_;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class _06_MyQueue {
+public class MyQueue {
     public static void main(String[] args) {
 
         // QUEUE
