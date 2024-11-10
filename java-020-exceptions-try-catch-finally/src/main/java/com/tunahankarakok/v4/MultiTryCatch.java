@@ -25,12 +25,28 @@ public class MultiTryCatch {
                 toplam = sayi1 + sayi2;
                 System.out.println("toplam : " + toplam);
 
-                bolme = (float)sayi1 / (float)sayi2;
-                System.out.println("bolme : " + bolme);
+                //TODO bölme işlemini sağlıklı yapın -- CEVAP AŞAĞIDAKİ İF - ELSE ve try-catch bloğu
+                /*
+                if(sayi2!=0){
+                    bolme = (float)sayi1 / (float)sayi2;
+                    System.out.println("bolme : " + bolme);
+                }else{
+                    System.out.println("Bir sayı 0 a bölünemez.\n" +
+                            "Lütfen farklı bir sayı ile tekrar deneyiniz !");
+                }
+                */
+                try{
+                    if(sayi2 ==0){
+                        throw new ArithmeticException("Bölme işleminde bölen 0 olamaz");
+                    }
+                    bolme = (float) sayi1 / (float) sayi2;
+                }catch (ArithmeticException e){
+                    System.out.println(e.getMessage());
+                }
 
                // hataDurumuFlag = false;
 
-                //TODO bölme işlemini sağlıklı yapın
+
             }catch (ArithmeticException e){
                 System.out.println("Hata Durumu "+ e);
                 hataDurumuFlag = false;
